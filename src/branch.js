@@ -1,4 +1,10 @@
+import { Customer } from "./customer.js"
+
+
 export class Branch {
+    // name:string;
+    // customers:number[];
+
     constructor(name){
         this.name=name;
         this.customers=[];
@@ -9,7 +15,7 @@ export class Branch {
 
     }
     getCustomers(customer){
-        return this.Customers=[];
+        return this.Customers=[]; // maybe change
 
     }
     addCustomerTransaction(customerID,amount){
@@ -18,3 +24,10 @@ export class Branch {
 
 
 }
+
+const customer1 = new Customer("njood", "1")
+
+ console.log(customer1.getCustomers())
+
+
+

@@ -1,11 +1,13 @@
 import {transaction} from"./transaction.js";
 import {customer} from "./customer.js";
-import {bransh} from "./bransh.js";
+import {bransh} from "./branch.js";
 
 const t1= new Transiction (1,2);
 console.log(t1);
 
 class Bank {
+    name:string;
+    
     constructor(name){
         this.name=name;
         this.branshes=[];
