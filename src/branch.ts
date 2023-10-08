@@ -9,16 +9,17 @@ export class Branch {
         this.customers=[];
     }
 
-    getName(){
+    getName():string{
         return this.name;
 
     }
-    getCustomers(){
-        return this.customers; // maybe change
+    getCustomers():Customer[]{
+        return this.customers;
 
     }
-    addCustomer(customer:Customer){
+    addCustomer(customer:Customer):boolean{
         //check if the customer add or not 
+
         if (!this.customers.includes(customer)){
          this.customers.push(customer);
           return true ;
@@ -28,15 +29,21 @@ export class Branch {
 
     }
 
-    addCustomerTransaction(customerId:number , amount:number){
-        const customer = this.customers.find(customer => customer.id === customerId);
-        if (customer){
-            customer.addTransaction(amount)
+    addCustomerTransaction(customerId:string , amount:number){
+        const customer = this.customers.find((item => item.getId()
+        === customerId));
+        if (!customer ||!amount){
+            return false
+        }customer.addTransaction(amount)
+            return true ;
 
         } 
 
     }
-}
+
+
+
+
 
 
 // const sunBranch = new Branch ("sunBranch");

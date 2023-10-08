@@ -361,30 +361,30 @@
 
 // to tell the machine the answer just number
 
-function addNumber (a:number,b:number):number{
+// function addNumber (a:number,b:number):number{
 
-    return  a + b;
-}
-// function name
-console.log(addNumber(5,10));
+//     return  a + b;
+// }
+// // function name
+// console.log(addNumber(5,10));
 
-function sayHello (name:string){
-    return name;
-}
+// function sayHello (name:string){
+//     return name;
+// }
 
-const arr = [1,2,3,4];
+// const arr = [1,2,3,4];
 
-function checkThisarray (arr){
-    for (var i=0 ; i<arr.length; i++){
-        if (arr[i] > 2){
-            return true ;
-        }else {
-            return false ;
+// function checkThisarray (arr){
+//     for (var i=0 ; i<arr.length; i++){
+//         if (arr[i] > 2){
+//             return true ;
+//         }else {
+//             return false ;
 
-        }
-    }
-}
-    console.log(checkThisarray(arr));
+//         }
+//     }
+// }
+//     console.log(checkThisarray(arr));
 
 
 
